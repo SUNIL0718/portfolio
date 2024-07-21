@@ -1,3 +1,4 @@
+/* Base styles */
 .pl {
   padding: 50px 100px;
   display: flex;
@@ -5,19 +6,89 @@
   align-items: center;
   text-align: center;
 }
+
 .pl-text {
   width: 65%;
 }
+
 .pl-title {
-  font-style: 50px;
+  font-size: 50px;
   font-weight: 600;
 }
+
 .pl-desc {
   margin: 20px 0px;
 }
+
 .pl-list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  text-align: justify;
+}
+
+/* Media queries */
+
+/* For small desktops/laptops (width less than 1024px) */
+@media (max-width: 1024px) {
+  .pl {
+    padding: 40px 80px;
+  }
+
+  .pl-text {
+    width: 75%;
+  }
+
+  .pl-title {
+    font-size: 40px;
+  }
+
+  .pl-list {
+    justify-content: space-around;
+  }
+}
+
+/* For tablets (width less than 768px) */
+@media (max-width: 768px) {
+  .pl {
+    padding: 30px 60px;
+  }
+
+  .pl-text {
+    width: 85%;
+  }
+
+  .pl-title {
+    font-size: 35px;
+  }
+
+  .pl-list {
+    justify-content: center;
+  }
+}
+
+/* For mobile devices (width less than 480px) */
+@media (max-width: 480px) {
+  .pl {
+    padding: 20px 40px;
+  }
+
+  .pl-text {
+    width: 100%;
+  }
+
+  .pl-title {
+    font-size: 30px;
+  }
+
+  .pl-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pl-list > * {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }

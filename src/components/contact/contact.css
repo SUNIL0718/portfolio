@@ -1,20 +1,25 @@
+/* Base styles */
 .c {
   height: 100vh;
   position: relative;
 }
+
 .c-bg {
   width: 20px;
   height: 100%;
   background-color: #59b256;
   position: absolute;
 }
+
 .c-wrapper {
   padding: 50px;
   display: flex;
 }
+
 .c-left {
   flex: 1;
 }
+
 .c-right {
   flex: 1;
   display: flex;
@@ -22,10 +27,12 @@
   align-items: center;
   justify-content: center;
 }
+
 .c-title {
   font-size: 60px;
   width: 80%;
 }
+
 .c-info-item {
   display: flex;
   align-items: center;
@@ -33,17 +40,21 @@
   font-weight: 300;
   width: 70%;
 }
+
 .c-icon {
   width: 30px;
   height: 30px;
   margin-right: 20px;
 }
+
 .c-desc {
   font-weight: 200;
 }
+
 form {
   margin-top: 20px;
 }
+
 input {
   width: 50%;
   height: 50px;
@@ -53,12 +64,14 @@ input {
   font-size: 14px;
   padding-left: 10px;
 }
+
 textarea {
   width: 100%;
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
 }
+
 button {
   border: none;
   padding: 15px;
@@ -67,4 +80,84 @@ button {
   font-weight: 500;
   cursor: pointer;
   border-radius: 5px;
+}
+
+/* Media queries */
+
+/* For small desktops/laptops (width less than 1024px) */
+@media (max-width: 1024px) {
+  .c-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .c-title {
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .c-info-item {
+    width: 90%;
+    margin: 30px 0px;
+  }
+
+  input {
+    width: 70%;
+  }
+}
+
+/* For tablets (width less than 768px) */
+@media (max-width: 768px) {
+  .c-wrapper {
+    padding: 20px;
+  }
+
+  .c-title {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .c-info-item {
+    width: 100%;
+    margin: 20px 0px;
+  }
+
+  input {
+    width: 80%;
+  }
+}
+
+/* For mobile devices (width less than 480px) */
+@media (max-width: 480px) {
+  .c-wrapper {
+    padding: 10px;
+  }
+
+  .c-title {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .c-info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 15px 0px;
+  }
+
+  .c-icon {
+    margin-right: 10px;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  textarea {
+    width: 90%;
+  }
 }
