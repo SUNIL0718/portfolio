@@ -35,14 +35,13 @@ const Contact = () => {
           <h1 className="c-title">Let's discuss your project</h1>
           <div className="c-info">
             <div className="c-info-item">
-              <img src={Phone} alt="" className="c-icon" /> +91 9876543210
+              <img src={Phone} alt="" className="c-icon" /> +91 6239970951
             </div>
             <div className="c-info-item">
-              <img src={Email} alt="" className="c-icon" /> abcd@gmail.com
+              <img src={Email} alt="" className="c-icon" /> skay0718@gmail.com
             </div>
             <div className="c-info-item">
-              <img src={Address} alt="" className="c-icon" /> 245 King street,
-              Touterie Victoria 8520 Autralia
+              <img src={Address} alt="" className="c-icon" /> New Bashirpura, Jalandhar.
             </div>
           </div>
         </div>
